@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main(List<String> arguments) {
   var nomes = <String>['Ana', 'Luciana', 'Edson', 'Pedro', 'Tina'];
   print(nomes);
@@ -32,4 +34,13 @@ void main(List<String> arguments) {
   //outro método de ordenação(decrecente)
   nomes.sort((y, x) => x.compareTo(y));
   print(nomes);
+
+  //mesclagem de listas
+  //Funcinal - altera o estado das listas
+  var x = ['Casa', 'Tapete'];
+  var y = ['Marcelo', 'Prego'];
+  var saida = [x, y].expand((b) => b).toList();
+  print(saida);
+  print(x);
+  print(y);
 }
